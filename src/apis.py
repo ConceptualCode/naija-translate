@@ -1,11 +1,11 @@
 from fastapi import FastAPI, HTTPException, Query
 from pydantic import BaseModel, Field
 from typing import List
-from src.main import translate_text
+from main import translate_text
 
 app = FastAPI(title="English-to-Nigerian Translation API", version="1.0")
 
-MODEL_NAME = "model"
+MODEL_NAME = "/app/model"
 
 # Supported languages
 SUPPORTED_LANGUAGES = ["ig", "yo", "ha"]

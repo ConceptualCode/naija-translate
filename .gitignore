@@ -1,3 +1,4 @@
 /myenv/
 /model/
+.env
 /src/__pycache__/
